@@ -31,8 +31,14 @@ python setup.py
 ```
 6- Install TBB library required by YaDT:
 ```
+# Ubuntu/Debian
 sudo apt-get update
 sudo apt-get install libtbb2 
+
+# CentOS
+sudo yum update
+sudo yum install tbb
+
 ```
 7- It requires repositories as [content root](https://git-scm.com/book/en/v2/Git-Tools-Submodules). This can be done manually in [PyCharm](https://www.jetbrains.com/help/pycharm/configuring-content-roots.html) or by setting the [PYTHONPATH](https://bic-berkeley.github.io/psych-214-fall-2016/using_pythonpath.html).
 
