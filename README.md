@@ -20,7 +20,7 @@ conda create -n EXPLAN python=3.6
 conda activate EXPLAN
 
 ```
-4- Standing in the root directory of EXPLAN, install the required libraries:
+4- Standing in EXPLAN directory, install the required libraries:
 ```
 pip install -r requirement.txt
 
