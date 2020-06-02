@@ -20,9 +20,9 @@ conda create -n EXPLAN python=3.6
 conda activate EXPLAN
 
 ```
-4- Install the required libraries:
+4- Standing in EXPLAN directory, install the requirements:
 ```
-pip install -r EXPLAN/requirement.txt
+pip install -r requirement.txt
 
 ```
 5- Run initial setup:
