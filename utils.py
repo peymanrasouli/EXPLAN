@@ -1,7 +1,8 @@
 """
-This script imports necessary functions for creating
-the YaDT C4.5 decision tree and calculating the coverage
-of decision rules from the LORE repository.
+This script contains required functions for creating
+YaDT C4.5 decision tree, calculating the coverage of
+decision rules, and extracting Anchor decision rules
+that are implemented in LORE repository .
 """
 
 from LORE.prepare_dataset import *
