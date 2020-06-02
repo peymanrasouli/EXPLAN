@@ -5,29 +5,48 @@ This repository contains implementation codes of the following paper:
 EXPLAN: Explaining Black-box Classifiers using Adaptive Neighborhood Generation
 
 # Setup
-1- The repository contains [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). When cloning the repository, make sure you clone with submodules:
+1- Clone the repository using HTTP/SSH:
 ```
-git clone --recurse-submodules https://github.com/peymanras/EXPLAN
+git clone https://github.com/peymanras/EXPLAN
 
 ```
-2- It may require some repositories as [content root](https://git-scm.com/book/en/v2/Git-Tools-Submodules). This can be done manually in [PyCharm](https://www.jetbrains.com/help/pycharm/configuring-content-roots.html) or by setting the [PYTHONPATH](https://bic-berkeley.github.io/psych-214-fall-2016/using_pythonpath.html).
+2- Create a conda virtual environment:
+```
+conda create -n EXPLAN python=3.6
 
-3- After cloning, run initial setup:
+```
+3- Activate the conda environment: 
+```
+conda activate EXPLAN
+
+```
+4- Install the required libraries:
+```
+pip install -r requirement.txt
+
+```
+5- Run initial setup:
 ```
 python setup.py
 ```
+6- It requires repositories as [content root](https://git-scm.com/book/en/v2/Git-Tools-Submodules). This can be done manually in [PyCharm](https://www.jetbrains.com/help/pycharm/configuring-content-roots.html) or by setting the [PYTHONPATH](https://bic-berkeley.github.io/psych-214-fall-2016/using_pythonpath.html).
 
-4- We recommend using Anaconda Python 3.6 distribution for other required libraries. 
 
 # Reproducing the results
-1- To reproduce the fidelity and coverage results run:
+1- To test EXPLAN on a specific instance run:
+```
+python test_explan.py
+```
+2- To reproduce the fidelity and coverage results run:
 ```
 python fidelity_coverage_experiments.py
 ```
 
-2- To reproduce the stability results run:
+3- To reproduce the stability results run:
 ```
 python stability_experiments.py
 ```
+
+
 
 
