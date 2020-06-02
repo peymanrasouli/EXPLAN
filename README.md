@@ -22,7 +22,7 @@ conda activate EXPLAN
 ```
 4- Standing in EXPLAN directory, install the requirements:
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 
 ```
 5- Run initial setup:
