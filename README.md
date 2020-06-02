@@ -33,7 +33,7 @@ python setup.py
 
 
 # Reproducing the results
-1- To test EXPLAN on a specific instance run:
+1- To test EXPLAN on a single instance run:
 ```
 python test_explan.py
 ```
