@@ -5,7 +5,7 @@ Released under GNU General Public License v3.0
 
 2 June 2020 - Modified by Peyman Rasouli
 
-Changes:
+List of changes:
     - "prepare_german_dataset" function
     - "prepare_adult_dataset" function
     - "prepare_compass_dataset" function
