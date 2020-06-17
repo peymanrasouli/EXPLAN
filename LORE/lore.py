@@ -3,10 +3,10 @@ Copyright 2018 Riccardo Guidotti
 URL: https://github.com/riccotti/LORE
 Released under GNU General Public License v3.0
 
-2 June 2020 - Modified by Peyman Rasouli
+17 June 2020 - Modified by Peyman Rasouli
 
 List of changes:
-    - "is_satisfied" function
+    - Modifying the coverage criteria in "is_satisfied" function
 """
 
 import pyyadt

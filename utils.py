@@ -1,8 +1,8 @@
 """
-This script contains required functions for creating
-YaDT C4.5 decision tree, calculating the coverage of
-decision rules, and extracting Anchor decision rules
-that are implemented in LORE package.
+This module contains the implemented functions in LORE library
+required for creating YaDT C4.5 decision tree, calculating the
+coverage of decision rules, and extracting decision rules from
+Anchor explanations.
 """
 
 from LORE.prepare_dataset import *

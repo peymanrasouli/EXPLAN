@@ -3,12 +3,10 @@ Copyright 2018 Riccardo Guidotti
 URL: https://github.com/riccotti/LORE
 Released under GNU General Public License v3.0
 
-2 June 2020 - Modified by Peyman Rasouli
+17 June 2020 - Modified by Peyman Rasouli
 
 List of changes:
-    - "prepare_german_dataset" function
-    - "prepare_adult_dataset" function
-    - "prepare_compass_dataset" function
+    - Extracting discrete features in data set preparation functions
 """
 
 from util import *
@@ -24,7 +22,8 @@ def prepare_german_dataset(filename, path_data):
     class_name = 'default'
     possible_outcomes = list(df[class_name].unique())
     type_features, features_type = recognize_features_type(df, class_name)
-    discrete, continuous = set_discrete_continuous(columns, type_features, class_name, discrete=None, continuous=None)
+    discrete = ['installment_as_income_perc', 'present_res_since', 'credits_this_bank', 'people_under_maintenance']
+    discrete, continuous = set_discrete_continuous(columns, type_features, class_name, discrete=discrete, continuous=None)
     columns_tmp = list(columns)
     columns_tmp.remove(class_name)
     idx_features = {i: col for i, col in enumerate(columns_tmp)}
@@ -170,7 +169,8 @@ def prepare_compass_dataset(filename, path_data):
     class_name = 'class'
     possible_outcomes = list(df[class_name].unique())
     type_features, features_type = recognize_features_type(df, class_name)
-    discrete, continuous = set_discrete_continuous(columns, type_features, class_name, discrete=None, continuous=None)
+    discrete = ['is_recid', 'is_violent_recid', 'two_year_recid']
+    discrete, continuous = set_discrete_continuous(columns, type_features, class_name, discrete=discrete, continuous=None)
     columns_tmp = list(columns)
     columns_tmp.remove(class_name)
     idx_features = {i: col for i, col in enumerate(columns_tmp)}
@@ -211,3 +211,4 @@ def prepare_compass_dataset(filename, path_data):
     }
 
     return dataset
+

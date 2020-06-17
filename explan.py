@@ -99,7 +99,7 @@ def DataBalancing(blacbox, representative_samples, dataset):
     """
 
     # Applying SMOTE oversampling
-    oversampler = SMOTE()
+    oversampler = SMOTE(random_state=42)
     balanced_samples, _ = oversampler.fit_sample(representative_samples, blacbox.predict(representative_samples))
     discrete_indices = dataset['discrete_indices']
     balanced_samples[:, discrete_indices] = np.around(balanced_samples[:, discrete_indices])
