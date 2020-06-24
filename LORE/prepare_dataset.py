@@ -6,7 +6,7 @@ Released under GNU General Public License v3.0
 17 June 2020 - Modified by Peyman Rasouli
 
 List of changes:
-    - Extracting discrete features in data set preparation functions
+    - Extracting discrete features in the data set preparation functions
 """
 
 from util import *
