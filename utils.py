@@ -5,6 +5,12 @@ coverage of decision rules, and extracting decision rules from
 Anchor explanations.
 """
 
+import sys
+sys.path.insert(0, "lime")
+sys.path.insert(0, "LORE")
+sys.path.insert(0, "yadt")
+sys.path.insert(0, "treeinterpreter")
+
 from LORE.prepare_dataset import *
 from LORE.util import *
 from LORE import pyyadt
