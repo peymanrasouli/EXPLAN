@@ -1,8 +1,8 @@
 # EXPLAN
 
-This repository contains implementation codes of the following paper:
+This repository contains the implementation source code of the following paper:
 
-Peyman Rasouli and Ingrid Chieh Yu, "EXPLAN: Explaining Black-box Classifiers using Adaptive Neighborhood Generation," In Proceedings of The International Joint Conference on Neural Networks (IJCNN), Glasgow, 2020.
+P. Rasouli and I. C. Yu, "EXPLAN: Explaining Black-box Classifiers using Adaptive Neighborhood Generation," 2020 International Joint Conference on Neural Networks (IJCNN), Glasgow, United Kingdom, 2020, pp. 1-9, doi: 10.1109/IJCNN48605.2020.9206710.
 
 # Setup
 1- Clone the repository using HTTP/SSH:
