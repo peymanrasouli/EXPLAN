@@ -7,7 +7,7 @@ P. Rasouli and I. C. Yu, ["EXPLAN: Explaining Black-box Classifiers using Adapti
 # Setup
 1- Clone the repository using HTTP/SSH:
 ```
-git clone https://github.com/peymanras/EXPLAN
+git clone https://github.com/peymanrasouli/EXPLAN
 ```
 2- Create a conda virtual environment:
 ```
