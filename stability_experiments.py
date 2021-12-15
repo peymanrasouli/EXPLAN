@@ -222,7 +222,7 @@ def main():
 
             # Creating and training black-box
             BlackBoxConstructor = blackbox_list[blackbox_name]
-            blackbox = BlackBoxConstructor()
+            blackbox = BlackBoxConstructor(random_state=42)
             blackbox.fit(X_train, y_train)
 
             # Running stability experiment for every instance in X_explain

@@ -16,7 +16,7 @@ def main():
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     # Creating black-box model
-    blackbox = GradientBoostingClassifier()
+    blackbox = GradientBoostingClassifier(random_state=42)
     blackbox.fit(X_train, y_train)
 
     # Selecting instance to explain
