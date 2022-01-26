@@ -4,7 +4,7 @@ This repository contains the implementation source code of the following paper:
 
 [EXPLAN: Explaining Black-box Classifiers using Adaptive Neighborhood Generation](https://ieeexplore.ieee.org/document/9206710)
 
-Bibtex:
+BibTeX:
 
     @inproceedings{rasouli2020explan,
                    title={EXPLAN: Explaining Black-box Classifiers using Adaptive Neighborhood Generation},
